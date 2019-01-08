@@ -19,9 +19,9 @@
  
 
   const socket = io()
-  // socket.on('connect', function onConnect () {
-  //   console.log(`Connected as ${socket.id}`)
-  // })
+  socket.on('connect', function onConnect () {
+    console.log(`Connected as ${socket.id}`)
+  })
 
   socket.on('message', function onMessage (message) {
     // add received message to page
