@@ -39,7 +39,7 @@
     const $message = document.getElementById('message')
     socket.emit('message', $message.value)
     // add to page
-    var p= document.createElement("p")
+    const $p= document.createElement("p")
     $p.appendChild(document.createTextNode(`YOU: ${$message.value}`))
     document.body.appendChild($p)
     // clear message input box
